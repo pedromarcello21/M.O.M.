@@ -5,9 +5,8 @@ import ssl
 import smtplib
 
 ##Save below for future when want to provide an attachment
-
-# load_dotenv()
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
+load_dotenv()
 
 
 email_sender = "vincentypedro@gmail.com"
