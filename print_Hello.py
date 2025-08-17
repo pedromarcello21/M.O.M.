@@ -1,12 +1,14 @@
 import os
-from dotenv import load_dotenv
-
 from email.message import EmailMessage
 #layer of security for keeping information secure
 import ssl
 import smtplib
 
-load_dotenv()
+##Save below for future when want to provide an attachment
+
+# load_dotenv()
+# from dotenv import load_dotenv
+
 
 email_sender = "vincentypedro@gmail.com"
 email_password = os.environ.get("EMAIL_PASSWORD")
