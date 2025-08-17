@@ -3,7 +3,7 @@ name: Python Script Workflow
 on:
   workflow_dispatch: #allows for manual run
   schedule:
-    - cron: '0 15 * * *'
+    - cron: '0 16 * * *'
 
 jobs:
   run-python-script:
@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-python@v5 
         with:
           python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       
       - name: Run Python script
         run: python print_Hello.py
