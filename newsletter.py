@@ -19,8 +19,8 @@ email_sender = "vincentypedro@gmail.com"
 email_password = os.environ.get("EMAIL_PASSWORD")
 email_receiver = "vincentypedro@gmail.com"
 
-subject = f"Today\'s Email ${today}"
-body= f"Hello,\n\nHere's today's pokemon: ${random.choice(pokemon)}\n\nBest,\nPedro"
+subject = f"Today\'s Email {today}"
+body= f"Hello,\n\nHere's today's pokemon: {random.choice(pokemon)}\n\nBest,\nPedro"
 
 em = EmailMessage()
 
