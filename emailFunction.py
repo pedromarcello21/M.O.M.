@@ -13,7 +13,7 @@ def send_email(body):
     """Send introductory email"""
     email_sender="vincentypedro@gmail.com"
     email_password = os.environ.get("EMAIL_PASSWORD")
-    email_receiver = "vincentypedro@gmail.com"
+    email_receiver = "mmvincenty@yahoo.com"
 
     
 
