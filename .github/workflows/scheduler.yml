@@ -1,4 +1,4 @@
-name: Python Script Workflow
+name: M.O.M. execution
 
 on:
   workflow_dispatch: #allows for manual run
@@ -22,6 +22,6 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Python script
-        run: python newsletter.py
+        run: python mommyNewsletter.py
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
