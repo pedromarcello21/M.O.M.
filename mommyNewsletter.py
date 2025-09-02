@@ -29,4 +29,4 @@ body = completion.choices[0].message
 
 print(body.content.strip()+ "\nLove you mate,\nPedro")
 
-# send_email(body.content.strip())
+send_email(body.content.strip()+ "\nLove you mate,\nPedro")
