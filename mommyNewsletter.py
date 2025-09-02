@@ -6,6 +6,7 @@ import os
 import ssl
 import smtplib
 import datetime as dt
+import random
 from emailFunction import send_email
 
 
@@ -13,7 +14,12 @@ load_dotenv()  # this reads the .env file
 
 openai.api_key = os.getenv('API_KEY')
 
-prompt = "Tell mommy how much I love her"
+prompts = [
+    "Tell my mommy how much I love her.  Include emojis.", 
+    "Tell my mom about a random destination in the world.  Include emojis."
+    ]
+
+prompt = random.choice(prompts)
 completion = openai.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[{"role": "user", "content": prompt}],
@@ -21,6 +27,6 @@ completion = openai.chat.completions.create(
 
 body = completion.choices[0].message
 
-print(body.content.strip())
+print(body.content.strip()+ "\nLove you mate,\nPedro")
 
-send_email(body.content.strip())
+# send_email(body.content.strip())
