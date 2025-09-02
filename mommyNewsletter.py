@@ -27,6 +27,6 @@ completion = openai.chat.completions.create(
 
 body = completion.choices[0].message
 
-print(body.content.strip()+ "\nLove you mate,\nPedro")
+print(body.content.strip()+ "\n\nLove you mate")
 
-send_email(body.content.strip()+ "\nLove you mate,\nPedro")
+send_email(body.content.strip()+ "\n\nLove you mate")
