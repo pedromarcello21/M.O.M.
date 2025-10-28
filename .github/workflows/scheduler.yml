@@ -3,7 +3,7 @@ name: M.O.M. execution
 on:
   workflow_dispatch: #allows for manual run
   schedule:
-    - cron: '10 18 * * *'
+    - cron: '0 18 * * *'
 
 jobs:
   run-python-script:
