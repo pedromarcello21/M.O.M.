@@ -2,4 +2,4 @@
 
 This is my first e-mail messaging bot that messages my mom every day to tell her how much I love her.  This bot send a prompt to the OpenAI API to write a message expressing the love I have for my mom.  An email is then sent to my mom with the output of this prompt.
 
-#Commit on 10/27 so bot isn't rendered idle
+#Commit on 3/31 so bot isn't idle
